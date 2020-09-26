@@ -9,7 +9,7 @@
 import Foundation
 
 struct CardResponse: Decodable {
-    let cards: [Card]
+    let cards: Card
     
 }
 
@@ -27,7 +27,7 @@ struct Card: Decodable {
     let elite: Bool
     let faction: String
     let health: Int
-    let mechanics: [Mechanics]
+    let mechanics: Mechanics
     let rarity: String
     let set: String
     let type: String
