@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D3052F6251F968A005FA1D7 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3052F5251F968A005FA1D7 /* CardService.swift */; };
 		8D3052F9251F981F005FA1D7 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3052F8251F981F005FA1D7 /* URL+Extensions.swift */; };
+		8D3CA93F251F9F0800B49E1A /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CA93E251F9F0800B49E1A /* CardsViewModel.swift */; };
 		8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45225E251F810E00BEB274 /* AppDelegate.swift */; };
 		8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452260251F810E00BEB274 /* SceneDelegate.swift */; };
 		8D452263251F810E00BEB274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452262251F810E00BEB274 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		8D3052F5251F968A005FA1D7 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		8D3052F8251F981F005FA1D7 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		8D3CA93E251F9F0800B49E1A /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		8D45225B251F810E00BEB274 /* HearthStoneCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthStoneCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D45225E251F810E00BEB274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D452260251F810E00BEB274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		8D452273251F81C000BEB274 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D3CA93E251F9F0800B49E1A /* CardsViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */,
+				8D3CA93F251F9F0800B49E1A /* CardsViewModel.swift in Sources */,
 				8D3052F9251F981F005FA1D7 /* URL+Extensions.swift in Sources */,
 				8D3052F6251F968A005FA1D7 /* CardService.swift in Sources */,
 				8D452275251F84D000BEB274 /* CardResponse.swift in Sources */,
