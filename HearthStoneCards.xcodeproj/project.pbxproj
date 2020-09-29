@@ -16,6 +16,7 @@
 		8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */; };
 		8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */; };
 		8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */; };
+		8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31112522CA6B000B16C7 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCard.swift; sourceTree = "<group>"; };
 		8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCardAPIService.swift; sourceTree = "<group>"; };
 		8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
+		8D4C31112522CA6B000B16C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */,
+				8D4C31112522CA6B000B16C7 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */,
 				8D452263251F810E00BEB274 /* ContentView.swift in Sources */,
 				8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */,
+				8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
