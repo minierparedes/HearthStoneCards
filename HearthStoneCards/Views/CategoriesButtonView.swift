@@ -11,15 +11,17 @@ import SwiftUI
 struct CategoriesButtonView: View {
     let categories: [String]
     var body: some View {
-        HStack {
-            ForEach(categories, id: \.self) { category in
-                Button(action: {}, label: {
-                    Text(category)
-                        .fontWeight(category == self.categories.first ? .bold : .regular)
-                        .padding(.horizontal, 6)
-                        .foregroundColor(category == self.categories.first ? Color(.label) : .secondary)
-                })
-                
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(categories, id: \.self) { category in
+                    Button(action: {}, label: {
+                        Text(category)
+                            .fontWeight(category == self.categories.first ? .bold : .regular)
+                            .padding(.horizontal, 6)
+                            .foregroundColor(category == self.categories.first ? Color(.label) : .secondary)
+                    })
+                    
+                }
             }
         }
     }

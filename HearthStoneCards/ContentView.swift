@@ -10,15 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var cardViewModel = CardsViewModel()
+    //@ObservedObject private var cardViewModel = CardsViewModel()
     
     var body: some View {
         
-        Text("\(self.cardViewModel.cardClass)")
+        Text("hello world")
         
-            .onAppear() {
-                self.cardViewModel.fetchCards()
-        }
+            
     }
 }
 
