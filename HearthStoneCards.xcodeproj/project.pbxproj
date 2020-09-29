@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D3052F6251F968A005FA1D7 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3052F5251F968A005FA1D7 /* CardService.swift */; };
-		8D3052F9251F981F005FA1D7 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3052F8251F981F005FA1D7 /* URL+Extensions.swift */; };
 		8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45225E251F810E00BEB274 /* AppDelegate.swift */; };
 		8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452260251F810E00BEB274 /* SceneDelegate.swift */; };
 		8D452263251F810E00BEB274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452262251F810E00BEB274 /* ContentView.swift */; };
 		8D452265251F810F00BEB274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D452264251F810F00BEB274 /* Assets.xcassets */; };
 		8D452268251F810F00BEB274 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D452267251F810F00BEB274 /* Preview Assets.xcassets */; };
 		8D45226B251F810F00BEB274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D452269251F810F00BEB274 /* LaunchScreen.storyboard */; };
-		8D452275251F84D000BEB274 /* CardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452274251F84D000BEB274 /* CardResponse.swift */; };
+		8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */; };
+		8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */; };
+		8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D3052F5251F968A005FA1D7 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
-		8D3052F8251F981F005FA1D7 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		8D45225B251F810E00BEB274 /* HearthStoneCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthStoneCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D45225E251F810E00BEB274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D452260251F810E00BEB274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +27,9 @@
 		8D452267251F810F00BEB274 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D45226A251F810F00BEB274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D45226C251F810F00BEB274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D452274251F84D000BEB274 /* CardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardResponse.swift; sourceTree = "<group>"; };
+		8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCard.swift; sourceTree = "<group>"; };
+		8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCardAPIService.swift; sourceTree = "<group>"; };
+		8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +46,9 @@
 		8D3052F4251F9652005FA1D7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8D3052F5251F968A005FA1D7 /* CardService.swift */,
+				8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		8D3052F7251F97FD005FA1D7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8D3052F8251F981F005FA1D7 /* URL+Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8D452252251F810E00BEB274 = {
@@ -78,7 +70,6 @@
 		8D45225D251F810E00BEB274 /* HearthStoneCards */ = {
 			isa = PBXGroup;
 			children = (
-				8D3052F7251F97FD005FA1D7 /* Extensions */,
 				8D3052F4251F9652005FA1D7 /* Services */,
 				8D452273251F81C000BEB274 /* Views */,
 				8D452272251F81B700BEB274 /* Model */,
@@ -104,7 +95,7 @@
 		8D452272251F81B700BEB274 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8D452274251F84D000BEB274 /* CardResponse.swift */,
+				8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +103,7 @@
 		8D452273251F81C000BEB274 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,11 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */,
-				8D3052F9251F981F005FA1D7 /* URL+Extensions.swift in Sources */,
-				8D3052F6251F968A005FA1D7 /* CardService.swift in Sources */,
-				8D452275251F84D000BEB274 /* CardResponse.swift in Sources */,
+				8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */,
+				8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */,
 				8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */,
 				8D452263251F810E00BEB274 /* ContentView.swift in Sources */,
+				8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
