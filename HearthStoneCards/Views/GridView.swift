@@ -11,8 +11,12 @@ import SwiftUI
 struct GridView: View {
     let layout: [GridItem]
     var body: some View {
-        LazyVGrid(){
-            
+        LazyVGrid(colums: layout, spacing: 26){
+            ForEach(0 ..< 8) { item in
+                NavigationLink(destination: Text("Destination"), label: {
+                    GridCellView()
+                })
+            }
         }
     }
 }
