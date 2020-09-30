@@ -18,9 +18,11 @@ struct CategoriesView: View {
                 SearchTextFieldView(text: $text)
                 HeaderView(label: "Categories")
                 CategoriesButtonView(categories: categories)
+                    .padding()
                 GridView(layout: layout)
                 
             }
+            
             .navigationBarItems(leading: NavigationBarItemView(image: "line.horizontal.3"), trailing: NavigationBarItemView(image: "person.crop.circle"))
         }
     }

@@ -25,7 +25,7 @@ struct SearchTextFieldView: View {
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
                     .overlay(Image(systemName: "magnifyingglass")
                         .resizable()
-                        .frame(width: 45, height: 45)
+                        .frame(width: 40, height: 40)
                         .foregroundColor(.gray))
                     .padding(.trailing)
                     .offset(x: -5)
