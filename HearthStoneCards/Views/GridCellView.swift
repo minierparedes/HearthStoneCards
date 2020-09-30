@@ -12,7 +12,7 @@ struct GridCellView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Text(hearthStoneCard.name)
                     .font(.body)
                     .bold()
                 Spacer()

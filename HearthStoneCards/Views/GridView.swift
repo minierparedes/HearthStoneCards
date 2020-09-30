@@ -13,15 +13,14 @@ struct GridView: View {
     let layout: [GridItem]
     var body: some View {
         LazyVGrid(columns: layout, spacing: 26){
-            ForEach(hearthStoneCardstore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { item in
+            ForEach(hearthStoneCardstore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
                 NavigationLink(destination: Text("Destination"), label: {
-//                    GridCellView()
-                    Text(item.name!)
+                    GridCellView()
                 })
             }
         }
         onAppear{
-            hearthStoneCardstore.getHearthStoneCards(complition: ([HearthStoneCard]) -> ())
+            hearthStoneCardstore.getHearthStoneCards()
         }
     }
 }

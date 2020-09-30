@@ -14,6 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         
+        URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/EX1_011.png")
+        
         TabView {
             CategoriesView()
                 .tabItem{
