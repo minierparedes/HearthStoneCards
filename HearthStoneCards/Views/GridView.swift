@@ -9,14 +9,19 @@
 import SwiftUI
 
 struct GridView: View {
+    @StateObject var hearthStoneCardstore = HearthStoneCardAPIService()
     let layout: [GridItem]
     var body: some View {
         LazyVGrid(columns: layout, spacing: 26){
-            ForEach(0 ..< 8) { item in
+            ForEach(hearthStoneCardstore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { item in
                 NavigationLink(destination: Text("Destination"), label: {
-                    GridCellView()
+//                    GridCellView()
+                    Text(item.name!)
                 })
             }
+        }
+        onAppear{
+            hearthStoneCardstore.getHearthStoneCards(complition: ([HearthStoneCard]) -> ())
         }
     }
 }

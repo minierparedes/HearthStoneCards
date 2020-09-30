@@ -9,8 +9,8 @@
 import Foundation
 
 
-class HearthStoneCardAPIService {
-    
+class HearthStoneCardAPIService: ObservableObject {
+    @Published var hearthStoneCards: [HearthStoneCard]? = [HearthStoneCard]()
     
     func getHearthStoneCards(complition: @escaping ([HearthStoneCard]) -> ()) {
         guard let url = URL(string: "https://api.hearthstonejson.com/v1/25770/enUS/cards.json") else {
