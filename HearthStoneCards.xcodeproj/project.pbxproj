@@ -18,6 +18,8 @@
 		8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */; };
 		8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31112522CA6B000B16C7 /* HeaderView.swift */; };
 		8D4C31142522CBCF000B16C7 /* CategoriesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */; };
+		8D4C311625243D39000B16C7 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C311525243D39000B16C7 /* GridCellView.swift */; };
+		8D4C31182524439C000B16C7 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31172524439C000B16C7 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
 		8D4C31112522CA6B000B16C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonView.swift; sourceTree = "<group>"; };
+		8D4C311525243D39000B16C7 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		8D4C31172524439C000B16C7 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */,
 				8D4C31112522CA6B000B16C7 /* HeaderView.swift */,
 				8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */,
+				8D4C311525243D39000B16C7 /* GridCellView.swift */,
+				8D4C31172524439C000B16C7 /* GridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4C311625243D39000B16C7 /* GridCellView.swift in Sources */,
 				8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */,
 				8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */,
 				8D4C31142522CBCF000B16C7 /* CategoriesButtonView.swift in Sources */,
@@ -192,6 +199,7 @@
 				8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */,
 				8D452263251F810E00BEB274 /* ContentView.swift in Sources */,
 				8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */,
+				8D4C31182524439C000B16C7 /* GridView.swift in Sources */,
 				8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
