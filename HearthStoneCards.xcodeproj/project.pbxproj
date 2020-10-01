@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D08725325268FE2000A92C5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08725225268FE2000A92C5 /* AccountView.swift */; };
 		8D0AB21F2524DB1300A3A147 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AB21E2524DB1300A3A147 /* ImageLoader.swift */; };
 		8D0AB2222524DDAA00A3A147 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AB2212524DDAA00A3A147 /* URLImageView.swift */; };
 		8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45225E251F810E00BEB274 /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D08725225268FE2000A92C5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		8D0AB21E2524DB1300A3A147 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8D0AB2212524DDAA00A3A147 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		8D45225B251F810E00BEB274 /* HearthStoneCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthStoneCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 				8DE29EE0252446E5008A344F /* CategoriesView.swift */,
 				8DE29EE225244C88008A344F /* NavigationBarItemView.swift */,
 				8D0AB2212524DDAA00A3A147 /* URLImageView.swift */,
+				8D08725225268FE2000A92C5 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				8DE29EE325244C88008A344F /* NavigationBarItemView.swift in Sources */,
 				8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */,
 				8D452263251F810E00BEB274 /* ContentView.swift in Sources */,
+				8D08725325268FE2000A92C5 /* AccountView.swift in Sources */,
 				8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */,
 				8DE29EE1252446E5008A344F /* CategoriesView.swift in Sources */,
 				8D4C31182524439C000B16C7 /* GridView.swift in Sources */,
