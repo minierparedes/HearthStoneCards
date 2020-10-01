@@ -19,7 +19,7 @@ struct CategoriesView: View {
                 HeaderView(label: "Categories")
                 CategoriesButtonView(categories: categories)
                     .padding()
-                GridView(layout: layout)
+                GridView(hearthStoneCardStore: HearthStoneCardAPIService(), layout: layout)
                 
             }
             

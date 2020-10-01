@@ -25,7 +25,6 @@ struct GridCellView: View {
             }
             .padding([.top, .horizontal])
             URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/\(hsImageID).png", placeholder: "loading...")
-                .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
             

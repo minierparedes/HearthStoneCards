@@ -10,14 +10,14 @@ import SwiftUI
 
 
 struct GridView: View {
-    @StateObject var hearthStoneCardStore = HearthStoneCardAPIService()
+    @ObservedObject var hearthStoneCardStore: HearthStoneCardAPIService
     let layout: [GridItem]
     var body: some View {
         LazyVGrid(columns: layout, spacing: 26){
-            ForEach(hearthStoneCardstore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
+            ForEach(hearthStoneCardStore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
                 
-                NavigationLink(destination: Text(hearthStoneCard.name), label: {
-                    GridCellView(hsCardName: hearthStoneCard.name, hsImageID: hearthStoneCard.id)
+                NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
+                    GridCellView(hsCardName: hearthStoneCard.name!, hsImageID: hearthStoneCard.id!)
                 })
             }
         }
@@ -29,6 +29,6 @@ struct GridView: View {
 
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
-        GridView(layout: [GridItem(.adaptive(minimum: 180))])
+        GridView(hearthStoneCardStore: HearthStoneCardAPIService(), layout: [GridItem(.adaptive(minimum: 180))])
     }
 }
