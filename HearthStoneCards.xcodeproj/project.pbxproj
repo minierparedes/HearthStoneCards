@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0AB21F2524DB1300A3A147 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AB21E2524DB1300A3A147 /* ImageLoader.swift */; };
+		8D0AB2222524DDAA00A3A147 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AB2212524DDAA00A3A147 /* URLImageView.swift */; };
 		8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45225E251F810E00BEB274 /* AppDelegate.swift */; };
 		8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452260251F810E00BEB274 /* SceneDelegate.swift */; };
 		8D452263251F810E00BEB274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D452262251F810E00BEB274 /* ContentView.swift */; };
@@ -16,9 +18,17 @@
 		8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */; };
 		8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */; };
 		8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */; };
+		8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31112522CA6B000B16C7 /* HeaderView.swift */; };
+		8D4C31142522CBCF000B16C7 /* CategoriesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */; };
+		8D4C311625243D39000B16C7 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C311525243D39000B16C7 /* GridCellView.swift */; };
+		8D4C31182524439C000B16C7 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31172524439C000B16C7 /* GridView.swift */; };
+		8DE29EE1252446E5008A344F /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE29EE0252446E5008A344F /* CategoriesView.swift */; };
+		8DE29EE325244C88008A344F /* NavigationBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE29EE225244C88008A344F /* NavigationBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0AB21E2524DB1300A3A147 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		8D0AB2212524DDAA00A3A147 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		8D45225B251F810E00BEB274 /* HearthStoneCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthStoneCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D45225E251F810E00BEB274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D452260251F810E00BEB274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +40,12 @@
 		8D4C310B2522C627000B16C7 /* HearthStoneCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCard.swift; sourceTree = "<group>"; };
 		8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthStoneCardAPIService.swift; sourceTree = "<group>"; };
 		8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
+		8D4C31112522CA6B000B16C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonView.swift; sourceTree = "<group>"; };
+		8D4C311525243D39000B16C7 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		8D4C31172524439C000B16C7 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		8DE29EE0252446E5008A344F /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		8DE29EE225244C88008A344F /* NavigationBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4C310D2522C69C000B16C7 /* HearthStoneCardAPIService.swift */,
+				8D0AB21E2524DB1300A3A147 /* ImageLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -104,6 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				8D4C310F2522C925000B16C7 /* SearchTextFieldView.swift */,
+				8D4C31112522CA6B000B16C7 /* HeaderView.swift */,
+				8D4C31132522CBCF000B16C7 /* CategoriesButtonView.swift */,
+				8D4C311525243D39000B16C7 /* GridCellView.swift */,
+				8D4C31172524439C000B16C7 /* GridView.swift */,
+				8DE29EE0252446E5008A344F /* CategoriesView.swift */,
+				8DE29EE225244C88008A344F /* NavigationBarItemView.swift */,
+				8D0AB2212524DDAA00A3A147 /* URLImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ethancr0wn;
 				TargetAttributes = {
 					8D45225A251F810E00BEB274 = {
@@ -179,12 +203,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0AB2222524DDAA00A3A147 /* URLImageView.swift in Sources */,
+				8D4C311625243D39000B16C7 /* GridCellView.swift in Sources */,
 				8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */,
 				8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */,
+				8D4C31142522CBCF000B16C7 /* CategoriesButtonView.swift in Sources */,
 				8D4C31102522C925000B16C7 /* SearchTextFieldView.swift in Sources */,
+				8DE29EE325244C88008A344F /* NavigationBarItemView.swift in Sources */,
 				8D452261251F810E00BEB274 /* SceneDelegate.swift in Sources */,
 				8D452263251F810E00BEB274 /* ContentView.swift in Sources */,
 				8D4C310C2522C627000B16C7 /* HearthStoneCard.swift in Sources */,
+				8DE29EE1252446E5008A344F /* CategoriesView.swift in Sources */,
+				8D4C31182524439C000B16C7 /* GridView.swift in Sources */,
+				8D4C31122522CA6B000B16C7 /* HeaderView.swift in Sources */,
+				8D0AB21F2524DB1300A3A147 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -288,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -306,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -325,6 +359,7 @@
 				DEVELOPMENT_TEAM = NRX9TBQYUM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HearthStoneCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +380,7 @@
 				DEVELOPMENT_TEAM = NRX9TBQYUM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HearthStoneCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

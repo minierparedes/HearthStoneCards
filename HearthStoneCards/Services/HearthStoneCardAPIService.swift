@@ -9,10 +9,10 @@
 import Foundation
 
 
-class HearthStoneCardAPIService {
+class HearthStoneCardAPIService: ObservableObject {
+    @Published var hearthStoneCards: [HearthStoneCard]? = [HearthStoneCard]()
     
-    
-    func getHearthStoneCards(complition: @escaping ([HearthStoneCard]) -> ()) {
+    func getHearthStoneCards() {
         guard let url = URL(string: "https://api.hearthstonejson.com/v1/25770/enUS/cards.json") else {
             fatalError("Invalid URL")
         }
@@ -24,8 +24,8 @@ class HearthStoneCardAPIService {
             
             let hearthStoneCardsData = try! JSONDecoder().decode([HearthStoneCard].self, from: data)
                 DispatchQueue.main.async {
-                    complition(hearthStoneCardsData)
                     
+                    self.hearthStoneCards = hearthStoneCardsData
             }
             }.resume()
             
