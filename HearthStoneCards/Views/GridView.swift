@@ -17,7 +17,7 @@ struct GridView: View {
             ForEach(hearthStoneCardStore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
                 
                 NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
-                    GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id!)
+                    GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
                     
                 })
             }
