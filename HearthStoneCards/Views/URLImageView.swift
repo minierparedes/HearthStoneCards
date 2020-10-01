@@ -33,6 +33,6 @@ struct URLImageView: View {
 
 struct URLImageView_Previews: PreviewProvider {
     static var previews: some View {
-        URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/EX1_001.png")
+        URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/EX1_001.png", placeholder: "loading")
     }
 }

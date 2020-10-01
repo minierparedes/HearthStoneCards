@@ -9,6 +9,7 @@
 import Foundation
 
 struct HearthStoneCard: Codable, Identifiable {
+    //var cardID: String?
     var id:String?
     var name:String?
     var text:String?

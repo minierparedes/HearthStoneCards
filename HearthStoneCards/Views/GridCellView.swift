@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct GridCellView: View {
+    let hsCardName: String
+    let hsImageID: String
     var body: some View {
         VStack {
             HStack {
-                Text(hearthStoneCard.name)
+                Text(hsCardName)
                     .font(.body)
                     .bold()
                 Spacer()
@@ -22,7 +24,7 @@ struct GridCellView: View {
                 })
             }
             .padding([.top, .horizontal])
-            Image(uiImage: #imageLiteral(resourceName: "Aranna_Starseeker"))
+            URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/\(hsImageID).png", placeholder: "loading...")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
@@ -43,10 +45,10 @@ struct GridCellView: View {
 struct GridCellView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            GridCellView()
+            GridCellView(hsCardName: "", hsImageID: "")
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
-            GridCellView()
+            GridCellView(hsCardName: "", hsImageID: "")
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }
