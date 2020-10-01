@@ -14,7 +14,7 @@ struct SearchTextFieldView: View {
         ZStack(alignment: .trailing) {
             RoundedRectangle(cornerRadius: 30)
                 .frame(height: 55)
-                .foregroundColor(Color(.secondarySystemGroupedBackground))
+                .foregroundColor(Color(.secondarySystemBackground))
                 .padding()
             TextField("Find card", text: $text)
                 .padding(.leading)
@@ -22,10 +22,10 @@ struct SearchTextFieldView: View {
             Button(action: {}, label: {
                 Circle()
                     .frame(width: 45, height: 45)
-                    .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .foregroundColor(Color(.secondarySystemBackground))
                     .overlay(Image(systemName: "magnifyingglass")
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 25, height: 25)
                         .foregroundColor(.gray))
                     .padding(.trailing)
                     .offset(x: -5)

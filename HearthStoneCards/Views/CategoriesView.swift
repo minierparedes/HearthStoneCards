@@ -11,7 +11,7 @@ import SwiftUI
 struct CategoriesView: View {
     @State private var text = ""
     let categories = ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
-    let layout = [GridItem(.adaptive(minimum: 180))]
+    let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
         NavigationView {
             ScrollView {
@@ -19,7 +19,7 @@ struct CategoriesView: View {
                 HeaderView(label: "Categories")
                 CategoriesButtonView(categories: categories)
                     .padding()
-                GridView(hearthStoneCardStore: HearthStoneCardAPIService(), layout: layout)
+                GridView(hearthStoneCardStore: HearthStoneCardAPIService())
                 
             }
             

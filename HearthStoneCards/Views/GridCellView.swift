@@ -10,6 +10,8 @@ import SwiftUI
 
 struct GridCellView: View {
     let hsCardName: String
+    let hsCardClass: String
+    let hsCardSet: String
     let hsImageID: String
     var body: some View {
         VStack {
@@ -24,14 +26,14 @@ struct GridCellView: View {
                 })
             }
             .padding([.top, .horizontal])
-            URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/\(hsImageID).png", placeholder: "loading...")
+            URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/\(hsImageID).png", placeholder: Image("photo"))
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
             
-            Text("Some card")
+            Text(hsCardClass)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
-            Text("Another card")
+            Text(hsCardSet)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
         }.frame(width: 180, height: 180)
@@ -44,10 +46,11 @@ struct GridCellView: View {
 struct GridCellView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            GridCellView(hsCardName: "", hsImageID: "")
+            GridCellView(hsCardName: "", hsCardClass: "", hsCardSet: "", hsImageID: "")
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
-            GridCellView(hsCardName: "", hsImageID: "")
+            GridCellView(hsCardName: "", hsCardClass: "", hsCardSet: "", hsImageID: ""
+            )
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }
