@@ -25,6 +25,7 @@
 		8D4C31182524439C000B16C7 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C31172524439C000B16C7 /* GridView.swift */; };
 		8DE29EE1252446E5008A344F /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE29EE0252446E5008A344F /* CategoriesView.swift */; };
 		8DE29EE325244C88008A344F /* NavigationBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE29EE225244C88008A344F /* NavigationBarItemView.swift */; };
+		8DE29EE52526A7F3008A344F /* SideMenuVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE29EE42526A7F3008A344F /* SideMenuVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8D4C31172524439C000B16C7 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		8DE29EE0252446E5008A344F /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		8DE29EE225244C88008A344F /* NavigationBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemView.swift; sourceTree = "<group>"; };
+		8DE29EE42526A7F3008A344F /* SideMenuVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				8DE29EE225244C88008A344F /* NavigationBarItemView.swift */,
 				8D0AB2212524DDAA00A3A147 /* URLImageView.swift */,
 				8D08725225268FE2000A92C5 /* AccountView.swift */,
+				8DE29EE42526A7F3008A344F /* SideMenuVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				8D0AB2222524DDAA00A3A147 /* URLImageView.swift in Sources */,
 				8D4C311625243D39000B16C7 /* GridCellView.swift in Sources */,
+				8DE29EE52526A7F3008A344F /* SideMenuVIew.swift in Sources */,
 				8D45225F251F810E00BEB274 /* AppDelegate.swift in Sources */,
 				8D4C310E2522C69C000B16C7 /* HearthStoneCardAPIService.swift in Sources */,
 				8D4C31142522CBCF000B16C7 /* CategoriesButtonView.swift in Sources */,
