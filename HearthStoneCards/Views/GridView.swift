@@ -22,15 +22,15 @@ struct GridView: View {
                     ($0.name?.lowercased().contains(filterBySearch.lowercased()))! && $0.cardClass == filterByClass
                 } ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
                                
-                               NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
+                    NavigationLink(destination: HearthStoneCardDetailView(hsImageID: hearthStoneCard.id), label: {
                                    GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
                                    
                                })
                            }
             }else {
-                ForEach(hearthStoneCardStore.hearthStoneCards!.filter {($0.cardClass?.contains(filterByClass))!}, id: \.id ) { hearthStoneCard in
+                ForEach(hearthStoneCardStore.hearthStoneCards!, id: \.id ) { hearthStoneCard in
                     
-                    NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
+                    NavigationLink(destination: HearthStoneCardDetailView(hsImageID: hearthStoneCard.id), label: {
                         GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
                         
                     })

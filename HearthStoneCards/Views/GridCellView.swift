@@ -36,7 +36,7 @@ struct GridCellView: View {
             Text(hsCardSet)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
-        }.frame(width: 180, height: 180)
+        }.frame(width: 130, height: 200)
         .background(Color(.secondarySystemBackground))
         .foregroundColor(Color(.label))
         .cornerRadius(18)
