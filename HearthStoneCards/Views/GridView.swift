@@ -26,7 +26,7 @@ struct GridView: View {
                                })
                            }
             }else {
-                ForEach(hearthStoneCardStore.filter {$0.cardClass.contains(filterByClass)}, id: \.id ) { hearthStoneCard in
+                ForEach(hearthStoneCardStore.hearthStoneCards!.filter {($0.cardClass?.contains(filterByClass))!}, id: \.id ) { hearthStoneCard in
                     
                     NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
                         GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
