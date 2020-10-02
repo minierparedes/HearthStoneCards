@@ -17,12 +17,22 @@ struct GridView: View {
     let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
         LazyVGrid(columns: layout){
-            ForEach(hearthStoneCardStore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
-                
-                NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
-                    GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
+            if !filterBySearch.isEmpty {
+                ForEach(hearthStoneCardStore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
+                               
+                               NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
+                                   GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
+                                   
+                               })
+                           }
+            }else {
+                ForEach(hearthStoneCardStore.filter {$0.cardClass.contains(filterByClass)}, id: \.id ) { hearthStoneCard in
                     
-                })
+                    NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
+                        GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)
+                        
+                    })
+                }
             }
         }
         .onAppear{
