@@ -18,7 +18,9 @@ struct GridView: View {
     var body: some View {
         LazyVGrid(columns: layout){
             if !filterBySearch.isEmpty {
-                ForEach(hearthStoneCardStore.hearthStoneCards ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
+                ForEach(hearthStoneCardStore.hearthStoneCards?.filter {
+                    ($0.name?.lowercased().contains(filterBySearch.lowercased()))! && $0.cardClass == filterByClass
+                } ?? [HearthStoneCard](), id: \.id ) { hearthStoneCard in
                                
                                NavigationLink(destination: Text(hearthStoneCard.name ?? "Destination"), label: {
                                    GridCellView(hsCardName: hearthStoneCard.name!, hsCardClass: hearthStoneCard.cardClass!, hsCardSet: hearthStoneCard.set!, hsImageID: hearthStoneCard.id)

@@ -12,7 +12,7 @@ struct CategoriesView: View {
     @State private var filterBySearch = ""
     @State private var isSidemenuShowing = false
     @State private var isAccountViewShowing = false
-    @State private var filterByClass = "Druid"
+    @State private var filterByClass = "Demon Hunter"
     let categories = ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
     let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
@@ -21,7 +21,7 @@ struct CategoriesView: View {
                 ScrollView {
                     SearchTextFieldView(text: $filterBySearch)
                     HeaderView(label: "Categories")
-                    CategoriesButtonView(categories: categories)
+                    CategoriesButtonView(filterByClass: $filterByClass, categories: categories)
                         .padding()
                     GridView(filterByClass: $filterByClass, filterBySearch: $filterBySearch, hearthStoneCardStore: HearthStoneCardAPIService())
                     
