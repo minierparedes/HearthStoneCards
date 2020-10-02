@@ -18,11 +18,37 @@ struct AccountView: View {
                 Text("Account")
                 Spacer()
                 
-                Button(action: {}, label: {
+                Button(action: { isAccountViewShowing.toggle() }, label: {
                     Text("Done")
                 })
             }.padding()
-            .background(Color(.secondarySystemGroupedBackground))
+                .background(Color(.secondarySystemGroupedBackground))
+            
+            List {
+                Section {
+                    HStack {
+                        Image(systemName: "person")
+                            .font(.system(size: 30))
+                            .padding()
+                        VStack(alignment: .leading) {
+                            Text("person name")
+                            font(.headline)
+                            
+                            Text("email@gmail.com")
+                            foregroundColor(.secondary)
+                            
+                            
+                        }
+                    }
+                }
+                
+                Section {
+                    ForEach(0 ..< 5) { item in
+                        NavigationLink(destination: Text("Destination"), label: {Text("Navigate")})
+                        
+                    }
+                }
+            }.listStyle(GroupedListStyle())
         }
     }
 }
