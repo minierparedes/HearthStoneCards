@@ -9,20 +9,21 @@
 import SwiftUI
 
 struct CategoriesView: View {
-    @State private var text = ""
+    @State private var filterBySearch = ""
     @State private var isSidemenuShowing = false
     @State private var isAccountViewShowing = false
+    @State private var filterByClass = "Druid"
     let categories = ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
     let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
         ZStack {
             NavigationView {
                 ScrollView {
-                    SearchTextFieldView(text: $text)
+                    SearchTextFieldView(text: $filterBySearch)
                     HeaderView(label: "Categories")
                     CategoriesButtonView(categories: categories)
                         .padding()
-                    GridView(hearthStoneCardStore: HearthStoneCardAPIService())
+                    GridView(filterByClass: $filterByClass, filterBySearch: $filterBySearch, hearthStoneCardStore: HearthStoneCardAPIService())
                     
                 }
                 
