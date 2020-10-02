@@ -50,6 +50,7 @@ struct AccountView: View {
                 }
             }.listStyle(GroupedListStyle())
         }
+    .navigationBarHidden(true)
     }
 }
 
