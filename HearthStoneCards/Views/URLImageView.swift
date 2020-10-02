@@ -16,7 +16,7 @@ struct URLImageView: View {
     
     @ObservedObject var imageLoader = ImageLoader()
     
-    init(url: String, placeholder: String = "Aranna_Starseeker") {
+    init(url: String, placeholder: String = "blackCard") {
         self.url = url
         self.placeholder = placeholder
         self.imageLoader.downloadImage(url: self.url)
@@ -27,7 +27,7 @@ struct URLImageView: View {
         if let data = self.imageLoader.downloadedData, let uiIamge = UIImage(data: data) {
             Image(uiImage: uiIamge).renderingMode(.original).resizable()
         }else {
-            Image("Aranna_Starseeker").renderingMode(.original).resizable()
+            Image("blackCard").renderingMode(.original).resizable()
         }
     }
 }
