@@ -10,6 +10,9 @@ import SwiftUI
 
 
 struct GridView: View {
+    @Binding var filterByClass: String
+    @Binding var filterBySearch: String
+    
     @ObservedObject var hearthStoneCardStore: HearthStoneCardAPIService
     let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
@@ -31,6 +34,6 @@ struct GridView: View {
 
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
-        GridView(hearthStoneCardStore: HearthStoneCardAPIService())
+        GridView(filterByClass: Binding.constant("Druid"), filterBySearch: Binding.constant(""), hearthStoneCardStore: HearthStoneCardAPIService())
     }
 }
