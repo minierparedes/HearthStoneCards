@@ -9,21 +9,40 @@
 import SwiftUI
 
 struct CategoriesView: View {
-    @State private var text = ""
+    @State private var filterBySearch = ""
+    @State private var isSidemenuShowing = false
+    @State private var isAccountViewShowing = false
+    @State private var filterByClass = "Demon Hunter"
     let categories = ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
     let layout: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     var body: some View {
-        NavigationView {
-            ScrollView {
-                SearchTextFieldView(text: $text)
-                HeaderView(label: "Categories")
-                CategoriesButtonView(categories: categories)
-                    .padding()
-                GridView(hearthStoneCardStore: HearthStoneCardAPIService())
+        ZStack {
+            NavigationView {
+                ScrollView {
+                    SearchTextFieldView(text: $filterBySearch)
+                    HeaderView(label: "Categories")
+                    CategoriesButtonView(filterByClass: $filterByClass, categories: categories)
+                        .padding()
+                    GridView(filterByClass: $filterByClass, filterBySearch: $filterBySearch, hearthStoneCardStore: HearthStoneCardAPIService())
+                    
+                }
                 
+                .navigationBarItems(leading: NavigationBarItemView(image: "line.horizontal.3", isSidemenuShowing: $isSidemenuShowing, isAccountViewShowing: $isAccountViewShowing), trailing: NavigationBarItemView(image: "person.crop.circle", isSidemenuShowing: $isSidemenuShowing, isAccountViewShowing: $isAccountViewShowing))
+                .sheet(isPresented: $isAccountViewShowing) {
+                    AccountView(isAccountViewShowing: $isAccountViewShowing)
+                }
+            }
+            if isSidemenuShowing {
+                HStack {
+                    SideMenuVIew(isSidemenuShowing: $isSidemenuShowing)
+                        .offset(x: isSidemenuShowing ? 0 : -200)
+                    Spacer()
+                }
+            }else {
+                EmptyView()
             }
             
-            .navigationBarItems(leading: NavigationBarItemView(image: "line.horizontal.3"), trailing: NavigationBarItemView(image: "person.crop.circle"))
+            
         }
     }
 }

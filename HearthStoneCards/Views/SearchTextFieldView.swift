@@ -19,14 +19,11 @@ struct SearchTextFieldView: View {
             TextField("Find card", text: $text)
                 .padding(.leading)
                 .offset(x: 12)
-            Button(action: {}, label: {
+            Button(action: {text = ""}, label: {
                 Circle()
                     .frame(width: 45, height: 45)
-                    .foregroundColor(Color(.secondarySystemBackground))
-                    .overlay(Image(systemName: "magnifyingglass")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .foregroundColor(.gray))
+                    .foregroundColor(text.isEmpty ? Color(.secondarySystemBackground) : .red)
+                    .overlay(SearchBarButtonOverlayView(text: $text))
                     .padding(.trailing)
                     .offset(x: -5)
                 
@@ -47,6 +44,25 @@ struct SearchTextFieldView_Previews: PreviewProvider {
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
             
+        }
+    }
+}
+
+struct SearchBarButtonOverlayView: View {
+    @Binding var text: String
+    var body: some View {
+        Group {
+            if text.isEmpty {
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.gray)
+            } else {
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.gray)
+            }
         }
     }
 }

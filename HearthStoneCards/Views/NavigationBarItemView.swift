@@ -10,17 +10,26 @@ import SwiftUI
 
 struct NavigationBarItemView: View {
     let image: String
+    @Binding var isSidemenuShowing: Bool
+    @Binding var isAccountViewShowing: Bool
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {showOrHideView()}, label: {
             Image(systemName: image)
                 .font(.title)
                 .foregroundColor(Color(.label))
         })
     }
+    func showOrHideView() {
+        if image == "person.crop.circle" {
+            isAccountViewShowing.toggle()
+        } else {
+            isSidemenuShowing.toggle()
+        }
+    }
 }
 
 struct NavigationBarItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBarItemView(image: "person.crop.circle")
+        NavigationBarItemView(image: "person.crop.circle", isSidemenuShowing: Binding.constant(true), isAccountViewShowing: Binding.constant(true))
     }
 }

@@ -26,9 +26,9 @@ struct GridCellView: View {
                 })
             }
             .padding([.top, .horizontal])
-            URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/\(hsImageID).png", placeholder: "Aranna_Starseeker")
+            URLImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/\(hsImageID).png", placeholder: "blackCard")
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
+                .frame(width: 200, height: 190)
             
             Text(hsCardClass)
                 .frame(maxWidth: .infinity, alignment: .leading)

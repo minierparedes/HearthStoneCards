@@ -9,26 +9,34 @@
 import SwiftUI
 
 struct CategoriesButtonView: View {
+    @Binding var filterByClass: String
+    
     let categories: [String]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(categories, id: \.self) { category in
-                    Button(action: {}, label: {
                         Text(category)
-                            .fontWeight(category == self.categories.first ? .bold : .regular)
+                            .fontWeight(category == filterByClass ? .bold : .regular)
                             .padding(.horizontal, 6)
-                            .foregroundColor(category == self.categories.first ? Color(.label) : .secondary)
-                    })
-                    
+                            .foregroundColor(category == filterByClass ? Color(.label) : .secondary)
+                            .fixedSize()
+                            .onTapGesture {
+                                filter(by: category)
+                            }
                 }
             }
         }
     }
+    
+    func filter(by label: String) {
+        filterByClass = label
+    }
+    
 }
 
 struct CategoriesButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesButtonView(categories: ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"])
+        CategoriesButtonView(filterByClass: Binding.constant("Demon Hunter"), categories: ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"])
     }
 }
