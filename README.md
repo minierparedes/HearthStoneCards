@@ -2,7 +2,7 @@
 <p float="left">
 <img src="https://img.shields.io/github/languages/code-size/minierparedes/hearthstonecards">
 <img src="https://img.shields.io/github/last-commit/minierparedes/hearthstonecards/master">
-<img src="https://img.shields.io/github/license/minierparedes/hearthstonecards">
+<img src="https://img.shields.io/badge/license-MIT-blue">
 
 </p>
 
