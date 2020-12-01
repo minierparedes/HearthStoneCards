@@ -25,7 +25,7 @@ HearthStone Card Rolodex app collects data from the HearthstoneJSON API and disp
 
 on macOS, clone the project from github open with Xcode
 
-`build and run the projects`
+`build and run the project`
 
 <br>
 
